@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Podaci (skidaju se iz notebooka)
+data/*
+!data/.gitkeep
+
+# Lokalne beleške i uslovi zadatka (nisu deo predaje)
+CLAUDE.md
+opis.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
