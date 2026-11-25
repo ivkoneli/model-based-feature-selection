@@ -33,9 +33,11 @@ Brzi probe: Random Forest (200 stabala), split 75/25, top-k atributa po MDI važ
 | Spambase | [UCI](https://archive.ics.uci.edu/dataset/94) / OpenML `spambase` | 4.601 | 57 | AUC 0.989 | 20 → 0.987 | mali skup, posluži za brzu proveru |
 | SECOM | [UCI](https://archive.ics.uci.edu/dataset/179) | 1.567 | 590 | – | – | proizvodnja poluprovodnika, nedostajuće vrednosti, jaka neizbalansiranost; težak skup |
 
-**Predlog:** HAR kao glavni realni skup i Madelon kao kontrolisani skup, gde se može proveriti da li model pronalazi tačno 20 relevantnih atributa. Superconductivity je opcija ako je potreban i regresioni primer.
+**Izabran skup: HAR.** Klasifikacija 6 aktivnosti (hodanje, penjanje i silaženje niz stepenice, sedenje, stajanje, ležanje) na osnovu 561 atributa iz signala akcelerometra i žiroskopa. Atributi su jako korelisani, pa se očekuje da je dovoljan mali deo njih. Koristi se zvanična podela po osobama (21 osoba u train, 9 u test skupu).
 
-Podaci se skidaju direktno u notebooku preko `sklearn.datasets.fetch_openml` i ne čuvaju se u repozitorijumu.
+Etape eksperimenta su opisane u [`notebooks/feature_selection_har.ipynb`](notebooks/feature_selection_har.ipynb).
+
+Podaci se skidaju direktno u notebooku sa UCI repozitorijuma i ne čuvaju se u repozitorijumu.
 
 ## Struktura
 
