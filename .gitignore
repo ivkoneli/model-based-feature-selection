@@ -13,7 +13,7 @@ data/*
 
 # Lokalne beleške i uslovi zadatka (nisu deo predaje)
 CLAUDE.md
-opis.txt
+ZADATAK.md
 
 # OS / editor
 .DS_Store
